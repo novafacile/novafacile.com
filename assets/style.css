@@ -32,6 +32,12 @@ a:hover {
   color: #ffffff;
  }
 
+@media (min-width: 200px) { /* fix for iOS with cover and fixed background */
+  header {
+    background-attachment: initial !important;
+  }
+}
+
  header .header-bg {
   width: 100%;
   height: 100%;
