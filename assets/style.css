@@ -26,16 +26,16 @@ a:hover {
  header {
   background-image: url("../img/header.jpg");
   background-attachment: fixed;
-  background-position: center center;
-  background-repeat: no-repeat;
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
   color: #ffffff;
  }
 
  header .header-bg {
   width: 100%;
   height: 100%;
-  background: rgb(66, 49, 65,0.8);
+  background: rgb(66, 49, 65, 0.8);
  }
 
  header .logo {
@@ -113,7 +113,6 @@ article.card {
 
 /** article image **/
 article.card .article-image {
-
   min-height: 250px;
   background-size: cover;
   background-repeat: no-repeat;
@@ -127,12 +126,12 @@ article.card .article-image-overlay {
   align-items: center;
   width: 100%;
   height: 100%;
-  background: rgb(66, 49, 65,0.2);
+  background: rgb(66, 49, 65, 0.2);
   transition: 0.3s;
 }
 
 article.card .article-image-overlay:hover {
-  background: rgb(66, 49, 65,0.8);
+  background: rgb(66, 49, 65, 0.8);
 }
 
 article.card .article-image .icon {
