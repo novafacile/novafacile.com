@@ -14,26 +14,28 @@
     <link rel=stylesheet href="assets/style.css">
   </head>
   <body>
-    <header class="vh-100 container-fluid text-center">
-      <img src="img/logo-novafacile.png" class="logo">
-      <h1 class="display-4 px-3">Hi. This is novafacile.</h1>
-      <p class="lead mt-4">
-        We are building digital products<br>
-        simple and new.
-      </p>
-      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#aaa" class="bi bi-chevron-double-down position-absolute bottom-0 start-50 translate-middle-x mb-5" viewBox="0 0 16 16">
-        <path fill-rule="evenodd" d="M1.646 6.646a.5.5 0 0 1 .708 0L8 12.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
-        <path fill-rule="evenodd" d="M1.646 2.646a.5.5 0 0 1 .708 0L8 8.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
-      </svg>
+    <header class="vh-100 container-fluid text-center g-0">
+      <div class="header-bg">
+        <img src="img/logo-novafacile.png" class="logo">
+        <h1 class="display-4 px-3">Hi. This is novafacile.</h1>
+        <p class="lead mt-4">
+          We are building digital products<br>
+          simple and new.
+        </p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#aaaaaa" class="bi bi-chevron-double-down position-absolute bottom-0 start-50 translate-middle-x mb-5" viewBox="0 0 16 16" id="scroll-to-lead">
+          <path fill-rule="evenodd" d="M1.646 6.646a.5.5 0 0 1 .708 0L8 12.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+          <path fill-rule="evenodd" d="M1.646 2.646a.5.5 0 0 1 .708 0L8 8.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+        </svg>
+      </div>
     </header>
     
     <content>
-      <section class="container text-center lead">
+      <section class="container text-center lead" id="lead">
         <div class="row">
           <div class="col">
-            <p class="focus text-uppercase fw-bold">User Focused Products</p>
-            <p class="focus mt-4">
-            Digital products for special interests.<br>
+            <h2 class="text-uppercase fw-bold">User Focused Products</h2>
+            <p class="mt-4">
+            Digital products for special&nbsp;interests.<br>
             With great user experience and<br>
             information you really want.
             </p>
@@ -41,17 +43,19 @@
         </div>
       </section>
 
-      <section class="container d-flex flex-column text-center">
+      <section class="container-lg d-flex flex-column text-center">
 
         <!-- user experience -->
         <article class="card">
           <div class="row g-0">
-            <div class="col-12 col-md-6">
-              <img src="img/user-experience.jpg" alt="...">
+            <div class="col-12 col-md-6 article-image" style="background-image: url(img/user-experience.jpg);">
+              <div class="article-image-overlay">
+                <img src="assets/icons/person-fill.svg" class="icon" alt="User Experience">  
+              </div>
             </div>
             <div class="col-12 col-md-6">
               <div class="card-body">
-                <h5 class="card-title">User Experience</h5>
+                <h3 class="card-title">User Experience</h3>
                 <p class="card-text">
                   Think new. Think simple. We listen to our users. We test everything. Users do not have to think about how our products work. They just understand how to use them, right from the first touch.
                 </p>
@@ -63,12 +67,14 @@
         <!-- content -->
         <article class="card">
           <div class="row g-0 d-flex">
-            <div class="col-12 col-md-6 order-md-2">
-              <img src="img/content.jpg" alt="...">
+            <div class="col-12 col-md-6 order-md-2 article-image" style="background-image: url(img/content.jpg);">
+              <div class="article-image-overlay">
+                <img src="assets/icons/file-earmark-text.svg" class="icon" alt="Content">
+              </div>
             </div>
             <div class="col-12 col-md-6">
               <div class="card-body">
-                <h5 class="card-title">Content</h5>
+                <h3 class="card-title">Content</h3>
                 <p class="card-text">
                   Content is king. This saying is old but it's true. We build and organize content in a new way. So everyone will find what he is looking for.
                 </p>
@@ -80,12 +86,14 @@
         <!-- privacy -->
         <article class="card">
           <div class="row g-0">
-            <div class="col-12 col-md-6">
-              <img src="img/privacy.jpg" alt="...">
+            <div class="col-12 col-md-6 article-image" style="background-image: url(img/privacy.jpg);">
+              <div class="article-image-overlay">
+                <img src="assets/icons/lock-fill.svg" class="icon" alt="Privacy">
+              </div>
             </div>
             <div class="col-12 col-md-6">
               <div class="card-body ">
-                <h5 class="card-title">Privacy</h5>
+                <h3 class="card-title">Privacy</h3>
                 <p class="card-text">
                   Privacy is very important to us. We only use personal data if we really need it. For the advertising and tracking on our web portals we use an absolut minimum of data and only pseudonymised visitors data. External backend services are always connected anonymously.
                 </p>
@@ -98,12 +106,14 @@
         <!-- tech stack -->
         <article class="card">
           <div class="row g-0 d-flex">
-            <div class="col-12 col-md-6 order-md-2">
-              <img src="img/tech-stack.jpg" alt="...">
+            <div class="col-12 col-md-6 order-md-2 article-image" style="background-image: url(img/tech-stack.jpg);">
+              <div class="article-image-overlay">
+                <img src="assets/icons/code-slash.svg" class="icon" alt="Tech Stack">
+              </div>
             </div>
             <div class="col-12 col-md-6">
               <div class="card-body">
-                <h5 class="card-title">Tech Stack</h5>
+                <h3 class="card-title">Tech Stack</h3>
                 <p class="card-text">
                   Keep it simple, stupid. Many people think too complicated. In most cases, a simple solution is the best solution. If the tech stack is getting too complex, we start to redesign and simplify it.
                 </p>
@@ -116,22 +126,27 @@
         <!-- projects -->
         <article class="card">
           <div class="row g-0">
-            <div class="col-12 col-md-6">
-              <img src="img/deinfestival.jpg" alt="...">
+            <div class="col-12 col-md-6 article-image" style="background-image: url(img/products.jpg);">
+              <div class="article-image-overlay">
+                <img src="assets/icons/heart-fill.svg" class="icon" alt="Projects">
+              </div>
+              <div class="spacer"></div>
             </div>
             <div class="col-12 col-md-6">
               <div class="card-body">
-                <h5 class="card-title">Projects</h5>
+                <h3 class="card-title">Products</h3>
                 <div class="card-text">
-                  <strong>Worldwide:</strong>
+                  <strong>Software:</strong><br>
+                  <p><a href="https://novagallery.de">novaGallery</a> - Photo Gallery Script (PHP)</p>
+                  
+                  <strong>PaaS (Germany):</strong>
                   <ul>
-                    <li><a href="https://novagallery.de">novaGallery</a> - Photo Gallery Script (PHP)</li>
-                  </ul>
-                  <strong>Germany:</strong>
-                  <ul>
-                    <li><a href="https://www.dein-festival.de">Dein Festival</a> - Festival Guide for Germany</li>
                     <li><a href="https://www.novapages.de">novaPages</a> - Homepages for rent</li>
                     <li><a href="https://www.novastorage.de">novaStorage</a> - Secure online storage</li>
+                  </ul>
+                  <strong>Web Portals (Germany):</strong>
+                  <ul>
+                    <li><a href="https://www.dein-festival.de">Dein Festival</a> - Festival Guide</li>
                   </ul>
                 </div>
               </div>
@@ -144,7 +159,7 @@
     
 
 
-    <footer class="mt-5 py-5 text-center">
+    <footer class="text-center">
       <section class="container">
         <div class="row">
           <div class="col-12 col-sm-6 text-sm-end pe-sm-4 mb-4">
@@ -159,10 +174,11 @@
           <div class="col-12 col-sm-6 text-sm-start ps-sm-4 mb-4">
             <p><strong class="text-uppercase">Privacy Statement</strong></p>
             <p>
-              pure privacy<br>
+              <strong>pure privacy</strong><br>
               only technical cookie<br>
+              no external tools & scripts<br>
               no tracking<br>
-              no ip address logging<br>
+
             </p>
           </div>
           <div class="col-12 mt-4">
@@ -172,6 +188,18 @@
       </section>
       
     </footer>
+
+    <script type="text/javascript">
+      var scrollToLink =  document.getElementById("scroll-to-lead");
+      scrollToLink.addEventListener("click", function(){
+        let e = document.getElementById("lead");
+        e.scrollIntoView({
+          block: 'start',
+          behavior: 'smooth',
+          inline: 'start'
+        });
+      });
+    </script>
 
   </body>
 </html>
