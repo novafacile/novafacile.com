@@ -1,0 +1,170 @@
+/*****
+ * Style for novafacile.com
+ * @author novafacile OÜ
+ * @copyright 2021 novafacile OÜ
+ *****/
+
+body {
+  color: #5b5b5b;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+a {
+  text-decoration-style: dotted;
+  color: #57bf73;
+}
+
+a:hover {
+  color: #57bf73;
+}
+
+/** header **/
+ header {
+  background-image: url("../img/overlay.png"), url("../img/header.jpg");
+  background-attachment: scroll, fixed;
+  background-position: top left, center center;
+  background-repeat: repeat, no-repeat;
+  background-size: auto, cover;
+  color: #ffffff;
+ }
+
+ header .logo {
+  width: 250px;
+  height: auto;
+  margin-top: 20vh;
+ }
+
+ header h1.display-4 {
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-weight: 500;
+ }
+
+ header p.lead {
+  font-size: 1.4rem;
+ }
+
+header .icon {
+  color: #fdfdfd;
+}
+
+@media (max-width: 576px){
+  header p.lead {
+    font-size: 1.2rem;
+   }
+ }
+
+
+/** content section lead **/
+content section.lead {
+  margin: 5rem auto;
+  font-size: 1.6rem;
+  max-width: 650px;
+  border: 1px solid #e0e0e0;
+  border-left: 0px;
+  border-right: 0px;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+content section.lead p.focus {
+  letter-spacing: 0.1rem;
+  margin: 0 10px;
+}
+
+@media (max-width: 576px){
+  content section.lead {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 450px){
+  content section.lead {
+    font-size: 1.0rem;
+  }
+}
+
+
+article.card {
+  max-width: 960px;
+  border: 0;
+  margin: 0 auto;
+  font-size: 1.2rem;
+  font-weight: 300;
+  line-height: 2rem;
+}
+
+article.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+article .card-body {
+  padding: 3.5rem;
+  min-height: 350px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+}
+
+article:nth-child(even) .card-body {
+   justify-content: flex-end;
+}
+
+article .card-body .card-text {
+   text-align: left;
+}
+
+article:nth-child(even) .card-body .card-text {
+   text-align: right;
+}
+
+@media (max-width: 576px){
+  article:nth-child(even) .card-body {
+     justify-content: flex-start;
+  }
+
+  article:nth-child(even) .card-body .card-text {
+   text-align: left;
+  }
+}
+
+
+article .card-title {
+  font-weight: 600;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  margin-bottom: 1rem;
+}
+
+
+@media (max-width: 768px) {
+  article.card img {
+    max-height: 250px;
+  }
+
+  article .card-body {
+    align-content: flex-start;
+    padding: 2rem 1rem 4rem 1rem;
+    min-height: unset;
+  }
+}
+
+/** footer **/
+footer {
+  background-color: #57bf73;
+  color: #fff;
+  font-weight: 300;
+}
+
+footer .cem {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+}
