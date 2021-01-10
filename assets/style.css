@@ -32,7 +32,7 @@ a:hover {
   color: #ffffff;
  }
 
-@media (min-width: 200px) { /* fix for iOS with cover and fixed background */
+@media (max-width: 810px) { /* fix for iOS with cover and fixed background */
   header {
     background-attachment: initial !important;
   }
